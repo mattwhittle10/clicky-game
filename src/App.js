@@ -4,7 +4,6 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import cards from "./cards.json";
 import "./App.css";
-import { is } from "@babel/types";
 
 class App extends Component {
   state = {

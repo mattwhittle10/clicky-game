@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import cards from "./cards.json";
 import "./App.css";
+import { is } from "@babel/types";
 
 class App extends Component {
   state = {
@@ -17,7 +18,15 @@ class App extends Component {
         console.log(this.state.highscore);
       })
     }
+    this.state.cards.forEach(card => {
+      card.count = 0;
+    });
+    alert(`Game Over :( \nscore: ${this.state.score}`);
+    this.setState({score: 0});
+    return true;
   }
+
+  
 }
 
 

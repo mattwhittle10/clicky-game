@@ -8,12 +8,19 @@
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
   }
+
+  .card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    box-shadow: 0px 5px 25px 15px rgb(61, 134, 187);
+    }
   
   .card > .img-container {
     height: 100%;
     overflow: hidden;
     text-align: center;
-    background:#6CADDC;
+    background:rgb(61, 134, 187);
   }
   .card > .img-container > img {
     width: 60%

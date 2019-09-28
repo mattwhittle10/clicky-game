@@ -34,9 +34,28 @@ class App extends Component {
           this.setState({score: this.state.score +1}, function(){
             console.log(this.state.score);
           });
+          this.state.cards.sort(() => Math.random() - 0.5)
+          return true;
+        } else {
+          this.gameover();
         }
       }
-    })
+    });
+  }
+  render() {
+    return (
+      <Wrapper>
+        <Header score={this.state.score} highscore={this.state.highscore}>Welcome to Clicky!</Header>
+        {this.state.cards.map(card => (
+          <Card 
+            clickCount={this.clickCount}
+            id={card.id}
+            key={card.id}
+            image={card.image}
+            />
+        ))}
+      </Wrapper>
+    );
   }
 }
 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><link type="text/css" id="dark-mode" rel="stylesheet" href="http://localhost:3000/"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link href="./Lonney Tunes Memory Game_files/css" rel="stylesheet" type="text/css">
+    <link href="./Lonney Tunes Memory Game_files/css(1)" rel="stylesheet" type="text/css">
+
+
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Lonney Tunes Memory Game</title>
+  <style>.card {
+    background: #1f4f73;
+    border-radius: 40px;
+    height: 250px;
+    margin: 1rem;
+    position: relative;
+    width: 325px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    text-align: left;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px 15px #00bdff;
+    }
+  
+  .card > .img-container {
+    border-radius:900px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background:#00bdff;
+  }
+  .card > .img-container > img {
+    width: 60%
+  }
+  
+  .card > .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px;
+  }
+  </style><style>.wrapper {
+    padding-top: 50px;
+    background: #ECEFF1;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    background-image: url(/static/media/backgroundMain.15aa7834.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }</style><style>
+.header {
+    width: 100%;
+    height: 500px;
+    margin-top: -1.5%;
+    padding: 1%;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1%;
+    background-image: url(/static/media/looneybg.6ae5e622.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(100, 121, 153);
+  }
+  
+  .title1 {
+    float: left;
+    font-size: 140%;
+    font-family: Pacifico;
+  }
+  
+  .title2 {
+    float: left;
+    font-family: Pacifico;
+    margin-bottom: 2%;
+  }
+  
+  .description {
+    margin-top: 16%;
+  }
+
+  .score {
+    margin-right: 8%;
+    margin-top: -28%;
+    float: right;
+    font-size: 160%;
+  }
+
+  .highScore {
+    margin-right: 4%;
+    margin-top: -18%;
+    float: right;
+    font-size: 160%;
+  }</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+</style><style>
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+</style><script charset="utf-8" src="./Lonney Tunes Memory Game_files/main.c42616a5c5a53efff83a.hot-update.js"></script></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="wrapper"><div class="header"><div class="title1">Looney Tunes</div><br><br><br><div class="title2">Memory Game!</div><br><div class="description"><div>Don't click on</div><div>the same character</div><div>more than once or you lose!</div></div><div class="score"><br>Score: 0</div><br><div class="highScore">High Score: 0</div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/daffy-duck-png-daffy-duck-png-490.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/clipart-baby-coyote-3.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/PNGPIX-COM-Tweety-Bird-PNG-Transparent-Image-500x810.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/1200px-Porky_Pig.svg.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/4366588-yosemite-sam-png-97-images-in-collection-page-2-yosemite-sam-png-737_1085_preview.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/1200px-Taz-Looney_Tunes.svg.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/Bugs_Bunny.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/download-elmer-fudd-elmer-fudd-png-image-with-no-background-elmer-fudd-png-412_751.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/59300e493919fe0ee3614de9.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/1200px-Marvin_the_Martian.svg.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/1200px-Pepé_Le_Pew.svg.png"></div></div><div class="card"><div class="img-container"><img src="./Lonney Tunes Memory Game_files/Foghorn-Leghorn-PNG-Image-File.png"></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Lonney Tunes Memory Game_files/bundle.js"></script><script src="./Lonney Tunes Memory Game_files/1.chunk.js"></script><script src="./Lonney Tunes Memory Game_files/main.chunk.js"></script><script src="./Lonney Tunes Memory Game_files/main.cb683439aa77e9cfde01.hot-update.js"></script>
+
+</body></html>

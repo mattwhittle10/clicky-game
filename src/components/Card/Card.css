@@ -1,6 +1,6 @@
 .card {
-    background: #fff;
-    border-radius: 2px;
+    background: #1f4f73;
+    border-radius: 40px;
     height: 250px;
     margin: 1rem;
     position: relative;
@@ -13,14 +13,15 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
         transform: scale(1.1);
-    box-shadow: 0px 5px 25px 15px rgb(61, 134, 187);
+    box-shadow: 0px 5px 25px 15px #00bdff;
     }
   
   .card > .img-container {
+    border-radius:900px;
     height: 100%;
     overflow: hidden;
     text-align: center;
-    background:rgb(61, 134, 187);
+    background:#00bdff;
   }
   .card > .img-container > img {
     width: 60%

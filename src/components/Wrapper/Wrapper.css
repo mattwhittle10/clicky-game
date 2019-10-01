@@ -8,4 +8,8 @@
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
+    background-image: url("./backgroundMain.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
